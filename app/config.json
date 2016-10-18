@@ -1,0 +1,9 @@
+{
+    "database": {
+        "mongodb": {
+            "username": "hapi",
+            "password": "password12345",
+            "host": "mongodb/hapi-plugins-public"
+        }
+    }
+}

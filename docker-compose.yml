@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+    mongodb:
+        image: 'mongo:latest'
+        volumes:
+            - 'mongodb:/data/db'
+    www:
+        image: 'node:4'
+        volumes:
+            - './app:/app'
+        links:
+            - 'mongodb:mongodb'
+        ports:
+            - '8080:8080'
+            - '8088:8088'
+        working_dir: '/app'
+        command: 'npm run start'
+
+volumes:
+    mongodb:

@@ -1,0 +1,72 @@
+{
+  "name": "hapi-plugins.com",
+  "version": "0.0.1",
+  "description": "Searchable database of hapi plugins",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "start": "node index",
+    "test-cov-html": "./node_modules/lab/bin/lab -a code -r html -o coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hapijs-edge/hapi-plugins.com.git"
+  },
+  "keywords": [
+    "hapi",
+    "hapijs",
+    "plugins",
+    "spumko",
+    "joi",
+    "bell",
+    "lout",
+    "inert",
+    "lab",
+    "good",
+    "yar",
+    "catbox",
+    "hapi.js",
+    "api",
+    "framework"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hapijs-edge/hapi-plugins.com/issues"
+  },
+  "homepage": "https://hapi-plugins.com",
+  "dependencies": {
+    "actin": "0.0.1",
+    "apollo-cassandra": "^1.0.4",
+    "async": "^0.9.0",
+    "bell": "^2.1.0",
+    "blipp": "^2.1.0",
+    "boom": "^2.6.1",
+    "glob": "^4.3.5",
+    "glue": "^2.0.0",
+    "good": "^6.1.0",
+    "good-console": "^5.0.0",
+    "handlebars": "^3.0.0",
+    "hapi": "^8.2.0",
+    "hapi-auth-cookie": "^2.0.0",
+    "hapi-react": "^2.0.2",
+    "hoek": "^2.11.0",
+    "joi": "^5.1.0",
+    "lodash": "^3.3.0",
+    "mongodb": "^2.0.30",
+    "mongoose": "^3.9.7",
+    "npm": "^2.5.1",
+    "npm-stats": "^1.1.0",
+    "purdy": "1.x.x",
+    "react": "^0.12.2",
+    "wreck": "^5.1.0",
+    "xss": "^0.1.20"
+  },
+  "devDependencies": {
+    "code": "^1.3.0",
+    "jsx-loader": "^0.12.2",
+    "lab": "^5.4.0",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.3"
+  }
+}
