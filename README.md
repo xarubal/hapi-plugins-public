@@ -8,7 +8,7 @@
   $ docker-compose exec mongodb mongo
   > use admin
   > db.system.users.remove({})
-  > db.system.version.remove({}) <== removing current version 
+  > db.system.version.remove({})
   > db.system.version.insert({ "_id" : "authSchema", "currentVersion" : 3 })
   > quit()
   $ docker-compose down mongodb
