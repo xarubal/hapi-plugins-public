@@ -19,6 +19,8 @@
   $ docker-compose exec mongodb mongo
   > use hapi-plugins-public
   > db.createUser({ user: 'hapi', pwd: 'password12345', roles: [ { role: "readWrite", db: "hapi-plugins-public" } ] });
+  > quit()
+  $ docker-compose exec mongodb mongo -u hapi -p password12345 hapi-plugins-public
   ```
   * Redirixir mediante NAT os portos 8080 e 8088 a localhost.
   * Instalar os paquetes da aplicación localmente antes de arrincar:
