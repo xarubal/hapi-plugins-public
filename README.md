@@ -21,4 +21,9 @@
   > db.createUser({ user: 'hapi', pwd: 'password12345', roles: [ { role: "readWrite", db: "hapi-plugins-public" } ] });
   ```
   * Redirixir mediante NAT os portos 8080 e 8088 a localhost.
+  * Instalar os paquetes da aplicación localmente antes de arrincar:
+  ```
+  $ docker run -ti -v "$PWD"/app:/app -w /app node:4 npm install
+  ```
   * A carga inicial de datos faise mediante a URL `/admin/plugins/populate/source`.
+
